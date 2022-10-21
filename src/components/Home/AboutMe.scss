@@ -1,0 +1,62 @@
+@import "../../App.scss";
+
+.about-me {
+  margin: 0 auto;
+  max-width: 1080px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .about-me-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7.5rem;
+    .about-me-title {
+      margin-top: 7.5rem;
+      font-size: $t-32;
+      font-weight: $bold;
+    }
+    .about-me-description {
+      text-align: center;
+      font-size: 1rem;
+      font-style: italic;
+      letter-spacing: 1px;
+      line-height: 38px;
+      margin-top: 3.75rem;
+    }
+    .about-me-btn {
+      margin-top: 3.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      width: 163px;
+      background: $white;
+      border: 1px solid #e1e1e1;
+      border-radius: 30px;
+      &:hover {
+        background-color: $s-color;
+        color: $white;
+        border: 1px solid rgba($color: #000000, $alpha: 0);
+        box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 0.15);
+      }
+    }
+    .about-me-links {
+      display: flex;
+      margin-top: 7.5rem;
+      .about-me-link {
+        text-align: center;
+        img {
+          width: 30%;
+        }
+        .about-me-link-text {
+          margin-top: 1rem;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

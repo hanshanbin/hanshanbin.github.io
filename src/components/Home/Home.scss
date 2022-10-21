@@ -1,0 +1,239 @@
+@import "../../App.scss";
+
+.sections {
+  overflow: scroll;
+
+  position: relative;
+  margin: 0 auto;
+}
+
+.home {
+  width: 100%;
+  //max-width: 1080px;
+  margin: 0 auto;
+  color: $black;
+  .section {
+    position: relative;
+
+    .home-intro__scrollDown {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: $bold;
+      position: absolute;
+      bottom: 2rem;
+
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      color: $black;
+    }
+  }
+
+  /* ------------------------------------ Section One ------------------------------------ */
+  .home-intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    .intro-text {
+      font-weight: $bold;
+      font-size: $t-32;
+      margin-bottom: 60px;
+      line-height: 135%;
+      letter-spacing: 1px;
+      animation: Move 1s ease;
+      animation: LetterSpace 1s ease;
+    }
+    .home-intro__mid {
+      span {
+        color: $p-color;
+      }
+    }
+    .wave1 {
+      position: absolute;
+      left: 50%;
+      bottom: -11rem;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 100%;
+    }
+  }
+
+  /* ------------------------------------ Section Two ------------------------------------ */
+
+  .home-works {
+    width: 100%;
+    background-color: $p-color;
+    border-top: 2px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+  .home {
+    width: 100%;
+    //max-width: 1080px;
+    margin: 0 auto;
+    color: $black;
+    .section {
+      position: relative;
+
+      .home-intro__scrollDown {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: $bold;
+        position: absolute;
+        bottom: 5.2rem;
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        color: $black;
+      }
+    }
+
+    /* ------------------------------------ Section One ------------------------------------ */
+    .home-intro {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      .intro-text {
+        font-weight: $bold;
+        font-size: $t-24;
+        margin-bottom: 60px;
+        line-height: 135%;
+        letter-spacing: 1px;
+        animation: Move 1s ease;
+        animation: LetterSpace 1s ease;
+      }
+      .home-intro__mid {
+        span {
+          color: $p-color;
+        }
+      }
+      .wave1 {
+        position: absolute;
+        left: 50%;
+        bottom: -6.5rem !important;
+
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 100%;
+      }
+    }
+
+    //   img {
+
+    /* ------------------------------------ Section Two ------------------------------------ */
+
+    .home-works {
+      padding: 0 40px 0 40px;
+      width: 100%;
+      background-color: $p-color;
+      border-top: 2px solid #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+    //max-width: 1080px;
+    margin: 0 auto;
+    color: $black;
+    .section {
+      position: relative;
+
+      .home-intro__scrollDown {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: $bold;
+        position: absolute;
+        bottom: 5.2rem;
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        color: $black;
+      }
+    }
+
+    /* ------------------------------------ Section One ------------------------------------ */
+    .home-intro {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      .intro-text {
+        font-weight: $bold;
+        font-size: $t-32;
+        margin-bottom: 60px;
+        line-height: 135%;
+        letter-spacing: 1px;
+        animation: Move 1s ease;
+        animation: LetterSpace 1s ease;
+      }
+      .home-intro__mid {
+        span {
+          color: $p-color;
+        }
+      }
+      .wave1 {
+        position: absolute;
+        left: 50%;
+        bottom: -6rem !important;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 100%;
+      }
+    }
+
+    //   img {
+
+    /* ------------------------------------ Section Two ------------------------------------ */
+
+    .home-works {
+      padding: 0 40px 0 40px;
+      width: 100%;
+      background-color: $p-color;
+      border-top: 2px solid #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
+}
+
+@keyframes LetterSpace {
+  0% {
+    letter-spacing: 0;
+  }
+  100% {
+    letter-spacing: 3%;
+  }
+}
+
+@keyframes Move {
+  0% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

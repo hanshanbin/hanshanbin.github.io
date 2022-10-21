@@ -1,0 +1,53 @@
+@import "../../App.scss";
+
+.about {
+  height: 100vh;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 30rem;
+  .about-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30rem;
+
+    .about-image-wrapper {
+      * {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: auto;
+      }
+      :nth-child(1) {
+        z-index: 100;
+        animation: image1 1s ease forwards;
+      }
+      :nth-child(2) {
+        animation: image2 1s ease forwards;
+      }
+    }
+    .about-introduce {
+      padding-top: 15rem;
+      width: 50%;
+    }
+  }
+}
+
+@keyframes image1 {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-53%, -53%);
+  }
+}
+
+@keyframes image2 {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-48%, -48%);
+  }
+}

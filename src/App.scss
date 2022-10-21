@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif !important;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+}
+
+.app {
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+$black: #383838;
+$white: #fbfbfb;
+$p-color: #ff9900;
+$s-color: #264777;
+$bold: 600;
+$medium: 400;
+
+$t-24: 1.5rem;
+$t-32: 2rem;
